@@ -1,0 +1,35 @@
+java + OpenGL 的环境配置
+安装JOGL
+
+开发环境：
+Windows 系统；
+Eclipse开发工具；
+
+配置过程：
+1、机器上验证java已安装
+控制台下输入命令：java
+输出结果为 java用法则已安装，否则必须先安装java开发工具包（JDK）
+下载地址：www.oracle.com/technetwork/java/javase/downloads 您可以从下载的文件安装JDK，然后进行环境变量的设置：设置PATH和JAVA_HOME环境变量指向包含的java.exe和javac.exe文件的目录。
+2、下载JOGL
+可以从网站上下载JOGL的最新版本 www.jogamp.org;
+点击 Home-> Builds/Downloads -> Current (zip)
+可以看到网站所维护的所有.jar文件的API列表。
+下载库.jar文件jogamp-all-platforms.7z，解压到本地指定路径下，当打开解压文件夹，会发现jar 文件夹，源代码和其他文件。
+打开解压后文件的lib文件，选择对应版本，我选的是windows-amd64文件打开将其中的jogl_cg.dll文件名修改为jogl.dll。
+3、Eclipse设置JOGL
+   1) 打开eclipse;
+   2）创建一个新的JAVA工程；
+   3）创建一个名为lib目录在项目文件夹中的新文件夹；
+   4）复制文件 gluegen-rt-natives-windows-amd64.jar, gluegen-rt.jar, jogl-all-natives-windowsamd64.jar 和 jogl-all.jar?到?lib?目录。
+   注意：这里的文件是jogl，千万别点错，文件里还包含joal和jocl，仔细点别选错了！！！
+   5）现在选择lib文件下这些文件，然后右键单击鼠标按钮。将显示一个快捷菜单，其中包含 Build Path > Add to Build Path.
+   6）选中项目点击右键选择Properties属性按钮，打开的控制面板中选择右侧 java Build Path > Libraries > JRE System Library > Native library location(none)，选中之后点击右侧 Edit... > External Folder 选择第2步中解压后的路径中的lib文件，点击OK。
+4、测试配置成功
+项目中新建java类，运行代码
+public class HelloWorld { 
+    public static void main(String arg[]) {  
+        System.loadLibrary("jogl"); 
+    }
+}
+运行成功即可，之后开发过程中需要的库文件可以通过Eclipse自动导入。
+
