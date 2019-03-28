@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="lib/" kind="src" path=""/>
+	<classpathentry kind="src" path="lib"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="F:/jogamp-all-platforms/lib/windows-amd64"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/t1/test/lib/customizer.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/t1/test/lib/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/t1/test/lib/gluegen-rt-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/t1/test/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/t1/test/lib/jogl-all.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/t1/test/lib/jogl-all-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/t1/test/lib/mediaplayer.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/eclipse-workspace/t1/test/lib/sound.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
